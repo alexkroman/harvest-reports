@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+  <head>
+    <title>Work Queue</title>
+    <style>
+      h1 {
+        font-size: 2.5em;
+      }
+      .result {
+        font-size: 3em;
+        padding: 10px;
+        margin-bottom: 60px;
+      } 
+      .result b {
+        background-color: pink;
+        padding: 5px;
+      }
+      body {
+        font-family: Arial;
+        line-height: 5.2em;
+      }
+      #chart{
+        float: right;
+        margin-right: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="result">We have <b><%= @log.total_remaining %> billable hours</b> which will take us <b><%= @log.weeks_left %> weeks</b> to use.</div>
+  </body>
+</html>
